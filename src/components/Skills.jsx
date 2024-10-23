@@ -70,7 +70,7 @@ const Skills = () => {
     <section
       id="skills"
       ref={skillsSectionRef}
-      className="py-12 bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100"
+      className="py-12 px-4 sm:px-6 bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100"
     >
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold text-center mb-8">My Skills</h2>

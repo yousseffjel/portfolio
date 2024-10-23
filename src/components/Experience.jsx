@@ -26,7 +26,7 @@ const experienceData = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-16 bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <section id="experience" className="py-16 px-4 sm:px-6 bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
       <div className="container mx-auto text-center">
         <h2 className="text-4xl font-bold mb-8">Experience</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
