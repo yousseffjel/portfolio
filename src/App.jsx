@@ -1,5 +1,6 @@
 import React, { lazy, Suspense, useState, useEffect } from "react";
-import Navbar from "./components/Navbar.jsx";  // Import Navbar
+import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer";
 import "./index.css";
 
 // Lazy load other components
@@ -47,6 +48,8 @@ function App() {
           <Certifications />
           <ContactForm />
         </Suspense>
+        {/* Footer Section */}
+        <Footer />  {/* Add the Footer here */}
       </div>
     </div>
   );
