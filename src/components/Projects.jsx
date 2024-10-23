@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 // Example images (replace these with your actual image imports or URLs)
 import frontEndImg1 from '../assets/images/frontend1.png';
 import frontEndImg2 from '../assets/images/frontend2.png';
-import frontEndImg3 from '../assets/images/frontend3.png';
+import frontEndImg3 from '../assets/images/coming-soon.png';
 import wordpressImg1 from '../assets/images/wordpress1.png';
 import wordpressImg2 from '../assets/images/wordpress2.png';
 import wordpressImg3 from '../assets/images/wordpress3.png';
@@ -12,15 +12,15 @@ import linuxImg2 from '../assets/images/linux2.jpg';
 import linuxImg3 from '../assets/images/linux3.jpg';
 
 const frontEndProjects = [
-  { title: "Front-End Project 1", description: "A responsive website built using React and TailwindCSS.", image: frontEndImg1, link: "https://example.com/frontend1" },
-  { title: "Front-End Project 2", description: "An interactive dashboard built with HTML, CSS, and JavaScript.", image: frontEndImg2, link: "https://example.com/frontend2" },
-  { title: "Front-End Project 3", description: "A mobile-first website with complex animations using React.", image: frontEndImg3, link: "https://example.com/frontend3" },
+  { title: "Music Player", description: "Developed a responsive music player using ReactJS, TailwindCSS, and the Deezer API. Features seamless music streaming, search functionality, and a modern user interface.", image: frontEndImg1, link: "https://musicplayer-alx.netlify.app/" },
+  { title: "Personal Portfolio", description: "Created and launched a personal portfolio using ReactJS and TailwindCSS. Showcases projects and skills with a clean, responsive design. Currently in development with ongoing improvements.", image: frontEndImg2, link: "https://yousseffjel.com/" },
+  { title: "Company Portfolio (Upcoming)", description: "Planned a company portfolio website using ReactJS and TailwindCSS. Will showcase services offered online with a professional, user-friendly design.", image: frontEndImg3, link: "#" },
 ];
 
 const wordpressProjects = [
-  { title: "WordPress Project 1", description: "A custom WordPress theme for a portfolio site.", image: wordpressImg1, link: "https://example.com/wordpress1" },
-  { title: "WordPress Project 2", description: "A WooCommerce integration for an online store.", image: wordpressImg2, link: "https://example.com/wordpress2" },
-  { title: "WordPress Project 3", description: "A blog with custom functionality using WordPress plugins.", image: wordpressImg3, link: "https://example.com/wordpress3" },
+  { title: "La Galerie Des Montres", description: "Built a sleek WordPress store for luxury watches with secure payments and responsive design.", image: wordpressImg1, link: "https://lagaleriedesmontres.com/" },
+  { title: "Key Watchs", description: "Created an online store for a boutique watch brand, focusing on clean design and easy checkout.", image: wordpressImg2, link: "https://keywatchs.com/" },
+  { title: "New Concept Equipements", description: "Developed a professional website for a company supplying equipment to hotels and restaurants.", image: wordpressImg3, link: "https://newconceptequipements.com/" },
 ];
 
 const linuxProjects = [
@@ -35,7 +35,7 @@ const Projects = () => {
   const renderProjects = (projects) => {
     return projects.map((project, index) => (
       <div key={index} className="project-card bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform transform hover:scale-105 mb-6">
-        <img src={project.image} alt={project.title} loading="lazy" className="w-full h-48 object-cover" />
+        <img src={project.image} alt={project.title} loading="lazy" className="w-full h-80 object-cover" />
         <div className="p-4">
           <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
           <p className="text-gray-600 dark:text-gray-300">{project.description}</p>
@@ -80,7 +80,7 @@ const Projects = () => {
         </div>
 
         {/* Project cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-0">
           {selectedCategory === 'frontend' && renderProjects(frontEndProjects)}
           {selectedCategory === 'wordpress' && renderProjects(wordpressProjects)}
           {selectedCategory === 'linux' && renderProjects(linuxProjects)}
