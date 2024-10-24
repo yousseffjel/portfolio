@@ -1,6 +1,6 @@
 import React, { lazy, Suspense, useState, useEffect } from "react";
 import Navbar from "./components/Navbar.jsx";
-import Footer from "./components/Footer";
+//import Footer from "./components/Footer";
 import "./index.css";
 
 // Lazy load other components
@@ -10,7 +10,8 @@ const Skills = lazy(() => import("./components/Skills.jsx"));
 const Projects = lazy(() => import("./components/Projects.jsx"));
 const Experience = lazy(() => import("./components/Experience.jsx"));
 const Certifications = lazy(() => import("./components/Certifications.jsx"));
-const ContactForm = lazy(() => import("./components/ContactForm.jsx"));
+const Contact = lazy(() => import("./components/Contact.jsx"));
+const Footer = lazy(() => import("./components/Footer.jsx"));
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -46,7 +47,7 @@ function App() {
           <Projects />
           <Experience />
           <Certifications />
-          <ContactForm />
+          <Contact />
         </Suspense>
         {/* Footer Section */}
         <Footer />  {/* Add the Footer here */}

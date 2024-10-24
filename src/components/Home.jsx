@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 
 const Home = ({ darkMode }) => {
-  const roles = useMemo(() => ["Front-End Developer", "WordPress Developer", "Linux Enthusiast"], []);
+  const roles = useMemo(() => ["Front-End Developer", "WordPress Developer", "GNU/Linux Enthusiast"], []);
   const [currentRole, setCurrentRole] = useState("");
   const [roleIndex, setRoleIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);

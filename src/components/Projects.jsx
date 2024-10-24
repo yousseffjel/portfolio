@@ -54,39 +54,39 @@ const Projects = () => {
 
   return (
     <section id="projects" className="py-16 bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
-      <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-6">Projects</h2>
+  <div className="container mx-auto text-center">
+    <h2 className="text-4xl font-bold mb-6">Projects</h2>
 
-        {/* Category buttons */}
-        <div className="flex flex-wrap justify-center mb-6">
-          <button
-            className={`mx-2 px-6 py-2 rounded-lg text-white transition duration-300 ${selectedCategory === 'frontend' ? 'bg-blue-500' : 'bg-gray-400 dark:bg-gray-600'}`}
-            onClick={() => setSelectedCategory('frontend')}
-          >
-            Front-End Projects
-          </button>
-          <button
-            className={`mx-2 px-6 py-2 rounded-lg text-white transition duration-300 ${selectedCategory === 'wordpress' ? 'bg-blue-500' : 'bg-gray-400 dark:bg-gray-600'}`}
-            onClick={() => setSelectedCategory('wordpress')}
-          >
-            WordPress Projects
-          </button>
-          <button
-            className={`mx-2 px-6 py-2 rounded-lg text-white transition duration-300 ${selectedCategory === 'linux' ? 'bg-blue-500' : 'bg-gray-400 dark:bg-gray-600'}`}
-            onClick={() => setSelectedCategory('linux')}
-          >
-            Linux Projects
-          </button>
-        </div>
+    {/* Category buttons */}
+    <div className="flex justify-center space-x-2 mb-6">
+      <button
+        className={`px-3 sm:px-6 py-2 rounded-lg text-white transition duration-300 ${selectedCategory === 'frontend' ? 'bg-blue-500' : 'bg-gray-400 dark:bg-gray-600'}`}
+        onClick={() => setSelectedCategory('frontend')}
+      >
+        Front-End
+      </button>
+      <button
+        className={`px-3 sm:px-6 py-2 rounded-lg text-white transition duration-300 ${selectedCategory === 'wordpress' ? 'bg-blue-500' : 'bg-gray-400 dark:bg-gray-600'}`}
+        onClick={() => setSelectedCategory('wordpress')}
+      >
+        WordPress
+      </button>
+      <button
+        className={`px-3 sm:px-6 py-2 rounded-lg text-white transition duration-300 ${selectedCategory === 'linux' ? 'bg-blue-500' : 'bg-gray-400 dark:bg-gray-600'}`}
+        onClick={() => setSelectedCategory('linux')}
+      >
+        GNU/Linux
+      </button>
+    </div>
 
-        {/* Project cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-0">
-          {selectedCategory === 'frontend' && renderProjects(frontEndProjects)}
-          {selectedCategory === 'wordpress' && renderProjects(wordpressProjects)}
-          {selectedCategory === 'linux' && renderProjects(linuxProjects)}
-        </div>
-      </div>
-    </section>
+    {/* Project cards */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-0">
+      {selectedCategory === 'frontend' && renderProjects(frontEndProjects)}
+      {selectedCategory === 'wordpress' && renderProjects(wordpressProjects)}
+      {selectedCategory === 'linux' && renderProjects(linuxProjects)}
+    </div>
+  </div>
+</section>
   );
 };
 
