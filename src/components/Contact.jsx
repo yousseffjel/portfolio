@@ -29,7 +29,7 @@ const Contact = () => {
 
             {/* Contact Links */}
             <a
-              href="mailto:ibrahimichaoui@gmail.com"
+              href="mailto:contact@yousseffjel.com"
               className="flex items-center text-lg text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition duration-300 transform hover:scale-105"
             >
               <FaEnvelope className="text-3xl mr-4" />
@@ -37,7 +37,7 @@ const Contact = () => {
             </a>
 
             <a
-              href="https://www.linkedin.com" // Replace with your LinkedIn link
+              href="https://www.linkedin.com/in/youssef-fjel/" // Replace with your LinkedIn link
               className="flex items-center text-lg text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition duration-300 transform hover:scale-105"
               target="_blank"
               rel="noopener noreferrer"
@@ -47,7 +47,7 @@ const Contact = () => {
             </a>
 
             <a
-              href="https://t.me/yourusername" // Replace with your Telegram link
+              href="https://t.me/yousseffjel" // Replace with your Telegram link
               className="flex items-center text-lg text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition duration-300 transform hover:scale-105"
               target="_blank"
               rel="noopener noreferrer"
@@ -57,7 +57,7 @@ const Contact = () => {
             </a>
 
             <a
-              href="https://github.com/your-profile" // Replace with your GitHub URL
+              href="https://github.com/yousseffjel" // Replace with your GitHub URL
               className="flex items-center text-lg text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition duration-300 transform hover:scale-105"
               target="_blank"
               rel="noopener noreferrer"
