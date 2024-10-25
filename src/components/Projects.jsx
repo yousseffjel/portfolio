@@ -7,9 +7,9 @@ import frontEndImg3 from '../assets/images/coming-soon.png';
 import wordpressImg1 from '../assets/images/wordpress1.png';
 import wordpressImg2 from '../assets/images/wordpress2.png';
 import wordpressImg3 from '../assets/images/wordpress3.png';
-import linuxImg1 from '../assets/images/linux1.jpg';
-import linuxImg2 from '../assets/images/linux2.jpg';
-import linuxImg3 from '../assets/images/linux3.jpg';
+import linuxImg1 from '../assets/images/coming-soon.png';
+import linuxImg2 from '../assets/images/coming-soon.png';
+import linuxImg3 from '../assets/images/coming-soon.png';
 
 const frontEndProjects = [
   { title: "Music Player", description: "Developed a responsive music player using ReactJS, TailwindCSS, and the Deezer API. Features seamless music streaming, search functionality, and a modern user interface.", image: frontEndImg1, link: "https://musicplayer-alx.netlify.app/" },
@@ -24,9 +24,9 @@ const wordpressProjects = [
 ];
 
 const linuxProjects = [
-  { title: "Linux Project 1", description: "Automated server setup with Bash scripting.", image: linuxImg1, link: "https://example.com/linux1" },
-  { title: "Linux Project 2", description: "Linux server security optimization for a web server.", image: linuxImg2, link: "https://example.com/linux2" },
-  { title: "Linux Project 3", description: "Docker container setup for a CI/CD pipeline.", image: linuxImg3, link: "https://example.com/linux3" },
+  { title: "Will add soon.", description: "Will add soon.", image: linuxImg1, link: "#" },
+  { title: "Will add soon.", description: "Will add soon.", image: linuxImg2, link: "#" },
+  { title: "Will add soon.", description: "Will add soon.", image: linuxImg3, link: "#" },
 ];
 
 const Projects = () => {
