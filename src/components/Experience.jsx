@@ -2,25 +2,25 @@ import React from 'react';
 
 const experienceData = [
   {
-    jobTitle: "Front-End Developer",
-    companyName: "Company A",
-    duration: "Jan 2021 - Present",
-    description: "Developed user-friendly web applications using React and JavaScript.",
-    technologies: ["React", "JavaScript", "CSS"],
+    jobTitle: "Front-End Developer (React.js)",
+    companyName: "ALX Morocco",
+    duration: "May 2024 – Oct 2024",
+    description: "Gained hands-on experience in front-end development through an intensive program, focusing on HTML, CSS, JavaScript, and React.js. Built responsive interfaces and collaborated on projects to apply skills in real-world coding scenarios, strengthening adaptability and problem-solving abilities.",
+    technologies: ["React", "TailwindCSS","JavaScript", "CSS", "HTML"],
   },
   {
-    jobTitle: "Junior Developer",
-    companyName: "Company B",
-    duration: "June 2020 - Dec 2020",
-    description: "Assisted in building responsive websites and maintaining web applications.",
-    technologies: ["HTML", "CSS"],
+    jobTitle: "WordPress Developer",
+    companyName: "Company X",
+    duration: "Dec 2022 – Sept 2023",
+    description: "Developed and maintained the store's website on WordPress, focusing on customized themes, plugin integration, and layout design. Ensured a user-friendly experience and optimized functionality to support the store’s online presence and customer engagement.",
+    technologies: ["WordPress", "HTML", "CSS"],
   },
   {
-    jobTitle: "Intern Developer",
-    companyName: "Company C",
-    duration: "Jan 2020 - May 2020",
+    jobTitle: "Freelance WordPress Developer",
+    companyName: "Freelance",
+    duration: "Sept 2023 – Present",
     description: "Worked on various projects and learned web development fundamentals.",
-    technologies: ["JavaScript", "NodeJS"],
+    technologies: ["JavaScript", "WordPress", "HTML", "CSS"],
   },
 ];
 
