@@ -7,9 +7,9 @@ import cert3 from '../assets/certifications/cert3.png';
 // Sample certification data
 const certificationsData = [
   {
-    title: "Certified Front-End Developer",
-    description: "Completed a comprehensive front-end development course.",
-    image: cert1, // Replace with actual path
+    title: "Professional Digital Skills Certification by ALX",
+    description: "Completed an intensive program focused on essential skills for the digital era, including digital communication, project management, team collaboration, and problem-solving techniques tailored for modern work environments.",
+    image: cert1,
   },
   {
     title: "JavaScript Developer Certification",
