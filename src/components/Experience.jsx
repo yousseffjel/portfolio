@@ -19,7 +19,7 @@ const experienceData = [
     jobTitle: "Freelance WordPress Developer",
     companyName: "Freelance",
     duration: "Sept 2023 – Present",
-    description: "Worked on various projects and learned web development fundamentals.",
+    description: "Worked on various freelance WordPress projects, creating custom themes, integrating plugins, and optimizing site performance. Focused on delivering responsive, user-friendly designs to enhance online engagement.",
     technologies: ["JavaScript", "WordPress", "HTML", "CSS"],
   },
 ];
