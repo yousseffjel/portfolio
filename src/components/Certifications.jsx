@@ -14,12 +14,12 @@ const certificationsData = [
   {
     title: "JavaScript Developer Certification",
     description: "Acquired skills in JavaScript for web development.",
-    image: cert2, // Replace with actual path
+    image: cert2,
   },
   {
     title: "React.js Certification",
     description: "Learned React.js for building user interfaces.",
-    image: cert3, // Replace with actual path
+    image: cert3,
   },
 ];
 
@@ -56,12 +56,10 @@ const Certifications = () => {
           ))}
         </div>
       </div>
-
-      {/* Modal for displaying the certification image */}
       {isOpen && (
   <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-    <div className="bg-white p-6 rounded-lg relative">
-      <button onClick={closeModal} className="absolute top-2 right-2 text-gray-600 hover:text-gray-800">
+    <div className="bg-black p-6 rounded-lg relative">
+      <button onClick={closeModal} className="absolute top-2 right-2 text-gray-900 hover:text-gray-800">
         &times; {/* Close icon */}
       </button>
       <img src={selectedImage} alt="Certification" className="max-w-full h-auto" />
