@@ -13,7 +13,7 @@ const certificationsData = [
   },
   {
     title: "Front-End Web Development Certification by ALX",
-    description: "Completed a 4-month ALX program focusing on HTML, CSS, and JavaScript to build responsive user interfaces.",
+    description: "Completed a 4-month ALX program in front-end web development, mastering HTML, CSS, JavaScript, React.js, and Tailwind to build responsive, modern interfaces.",
     image: cert2,
   },
   {
