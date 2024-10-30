@@ -12,8 +12,8 @@ const certificationsData = [
     image: cert1,
   },
   {
-    title: "JavaScript Developer Certification",
-    description: "Acquired skills in JavaScript for web development.",
+    title: "Front-End Web Development Certification by ALX",
+    description: "Completed a 4-month ALX program focusing on HTML, CSS, and JavaScript to build responsive user interfaces.",
     image: cert2,
   },
   {
