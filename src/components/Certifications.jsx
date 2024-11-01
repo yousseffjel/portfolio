@@ -58,12 +58,26 @@ const Certifications = () => {
         </div>
       </div>
       {isOpen && (
-  <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-    <div className="bg-black p-6 rounded-lg relative">
-      <button onClick={closeModal} className="absolute top-2 right-2 text-gray-900 hover:text-gray-800">
-        &times; {/* Close icon */}
+  <div 
+    className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
+    onClick={closeModal} // Close modal on clicking the background
+  >
+    <div
+      onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside the modal content
+      className="relative bg-transparent p-4 sm:p-6 rounded-2xl shadow-lg max-w-[90%] md:max-w-2xl lg:max-w-7xl xl:max-w-8xl max-h-screen mx-auto transform scale-95 transition-transform duration-300 ease-in-out"
+      style={{ transform: isOpen ? 'scale(1)' : 'scale(0.95)' }}
+    >
+      {/* Close Button */}
+      <button
+        onClick={closeModal}
+        className="absolute top-0 right-0 text-gray-100 hover:text-gray-300 text-2xl sm:text-3xl font-bold"
+        aria-label="Close certification modal"
+      >
+        &times;
       </button>
-      <img src={selectedImage} alt="Certification" className="max-w-full h-auto" />
+      
+      {/* Image Display */}
+      <img src={selectedImage} alt="Certification" className="max-w-full h-auto rounded-lg" />
     </div>
   </div>
 )}
