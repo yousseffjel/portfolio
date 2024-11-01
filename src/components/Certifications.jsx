@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import cert1 from '../assets/certifications/cert1.png';
 import cert2 from '../assets/certifications/cert2.png';
@@ -36,6 +36,24 @@ const Certifications = () => {
     setIsOpen(false);
     setSelectedImage(null);
   };
+
+  // Escape key support to close modal
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        closeModal();
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener('keydown', handleKeyDown);
+    } else {
+      document.removeEventListener('keydown', handleKeyDown);
+    }
+
+    // Clean up event listener when component unmounts or modal closes
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [isOpen]);
 
   return (
     <section id="certifications" className="py-16 px-4 sm:px-6 bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
