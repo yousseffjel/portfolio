@@ -26,10 +26,12 @@ const certificationsData = [
 const Certifications = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
+  const [isImageLoading, setIsImageLoading] = useState(true);
 
   const openModal = (image) => {
     setSelectedImage(image);
     setIsOpen(true);
+    setIsImageLoading(true);
   };
 
   const closeModal = () => {
@@ -93,9 +95,16 @@ const Certifications = () => {
       >
         &times;
       </button>
-      
+      {isImageLoading && (
+  <div className="flex justify-center items-center w-full h-full absolute inset-0 bg-transparent bg-opacity-75 rounded-lg">
+    <div className="loader border-t-4 border-blue-500 rounded-full w-12 h-12 animate-spin"></div>
+  </div>
+)}
       {/* Image Display */}
-      <img src={selectedImage} alt="Certification" className="max-w-full h-auto rounded-lg" />
+      <img 
+        src={selectedImage} 
+        alt="Certification" 
+        className="max-w-full h-auto rounded-lg" />
     </div>
   </div>
 )}
