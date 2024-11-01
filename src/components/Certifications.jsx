@@ -24,8 +24,8 @@ const certificationsData = [
 ];
 
 const Certifications = () => {
-  const [selectedImage, setSelectedImage] = useState(null); // State for modal image
-  const [isOpen, setIsOpen] = useState(false); // State for modal visibility
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [isOpen, setIsOpen] = useState(false);
 
   const openModal = (image) => {
     setSelectedImage(image);
@@ -49,6 +49,7 @@ const Certifications = () => {
               <button
                 onClick={() => openModal(certification.image)}
                 className="text-blue-500 dark:text-blue-400 mt-4 inline-block"
+                aria-label={`View certification for ${certification.title}`}
               >
                 View Certification
               </button>
