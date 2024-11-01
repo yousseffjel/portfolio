@@ -104,7 +104,9 @@ const Certifications = () => {
       <img 
         src={selectedImage} 
         alt="Certification" 
-        className="max-w-full h-auto rounded-lg" />
+        className={`max-w-full h-auto rounded-lg ${isImageLoading ? 'hidden' : 'block'} transition-transform duration-300 hover:scale-105`}
+        onLoad={() => setIsImageLoading(false)}
+        />
     </div>
   </div>
 )}
