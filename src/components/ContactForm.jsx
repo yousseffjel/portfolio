@@ -6,6 +6,7 @@ const ContactForm = () => {
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
+  const [loading, setLoading] = useState(false);
 
   // Function to validate email format
   const validateEmail = (email) => {
@@ -15,24 +16,30 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setError(""); // Clear any previous errors
-    setSuccess(""); // Clear any previous success message
+    setError("");
+    setSuccess("");
+    setLoading(true);
 
     // Form validation
     if (!name || !email || !message) {
       setError("All fields are required.");
+      setLoading(false);
       return;
     }
     if (!validateEmail(email)) {
       setError("Please enter a valid email address.");
+      setLoading(false);
       return;
     }
 
     // Mock success message for local testing (no actual email sent)
-    setSuccess("Your message has been sent successfully!");
-    setName("");
-    setEmail("");
-    setMessage("");
+    setTimeout(() => {
+      setSuccess("Your message has been sent successfully!");
+      setName("");
+      setEmail("");
+      setMessage("");
+      setLoading(false);
+  }, 2000);
   };
 
   return (
@@ -69,9 +76,16 @@ const ContactForm = () => {
       
       <button
         type="submit"
-        className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition duration-300 ease-in-out sm:px-6 sm:py-3"
+        disabled={loading}
+        className={`bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition duration-300 ease-in-out sm:px-6 sm:py-3 ${
+          loading ? "opacity-50 cursor-not-allowed" : ""
+        }`}
       >
-        Send Message
+        {loading ? (
+          <div className="loader border-t-4 border-white rounded-full w-5 h-5 animate-spin"></div>
+        ) : (
+          "Send Message"
+        )}
       </button>
     </form>
   );
