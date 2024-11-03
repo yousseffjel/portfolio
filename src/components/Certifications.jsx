@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 
 import cert1 from '../assets/certifications/cert1.png';
 import cert2 from '../assets/certifications/cert2.png';
-import cert3 from '../assets/certifications/cert3.png';
 
 // Sample certification data
 const certificationsData = [
@@ -15,11 +14,6 @@ const certificationsData = [
     title: "Front-End Web Development Certification by ALX",
     description: "Completed a 4-month ALX program in front-end web development, mastering HTML, CSS, JavaScript, React.js, and Tailwind to build responsive, modern interfaces.",
     image: cert2,
-  },
-  {
-    title: "React.js Certification",
-    description: "Learned React.js for building user interfaces.",
-    image: cert3,
   },
 ];
 
