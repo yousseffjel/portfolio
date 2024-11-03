@@ -28,43 +28,45 @@ const Contact = () => {
             </p>
 
             {/* Contact Links */}
-            <a
-              href="mailto:contact@yousseffjel.com"
-              className="flex items-center text-lg text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition duration-300 transform hover:scale-105"
-            >
-              <FaEnvelope className="text-3xl mr-4" />
-              <span>Email</span>
-            </a>
+            <div className="grid grid-cols-2 gap-6 md:grid-cols-1">
+              <a
+                href="mailto:contact@yousseffjel.com"
+                className="flex items-center justify-center text-lg text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition duration-300 transform hover:scale-105"
+              >
+                <FaEnvelope className="text-3xl mr-4" />
+                <span>Email</span>
+              </a>
 
-            <a
-              href="https://www.linkedin.com/in/youssef-fjel/" // Replace with your LinkedIn link
-              className="flex items-center text-lg text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition duration-300 transform hover:scale-105"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaLinkedin className="text-3xl mr-4" />
-              <span>LinkedIn</span>
-            </a>
+              <a
+                href="https://www.linkedin.com/in/youssef-fjel/"
+                className="flex items-center justify-center text-lg text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition duration-300 transform hover:scale-105"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin className="text-3xl mr-4" />
+                <span>LinkedIn</span>
+              </a>
 
-            <a
-              href="https://t.me/yousseffjel" // Replace with your Telegram link
-              className="flex items-center text-lg text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition duration-300 transform hover:scale-105"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaTelegramPlane className="text-3xl mr-4" />
-              <span>Telegram</span>
-            </a>
+              <a
+                href="https://t.me/yousseffjel"
+                className="flex items-center justify-center text-lg text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition duration-300 transform hover:scale-105"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaTelegramPlane className="text-3xl mr-4" />
+                <span>Telegram</span>
+              </a>
 
-            <a
-              href="https://github.com/yousseffjel" // Replace with your GitHub URL
-              className="flex items-center text-lg text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition duration-300 transform hover:scale-105"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithub className="text-3xl mr-4" />
-              <span>GitHub</span>
-            </a>
+              <a
+                href="https://github.com/yousseffjel" // Replace with your GitHub URL
+                className="flex items-center justify-center text-lg text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition duration-300 transform hover:scale-105"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub className="text-3xl mr-4" />
+                <span>GitHub</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
