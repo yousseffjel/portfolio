@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from "emailjs-com";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
@@ -32,6 +33,32 @@ const ContactForm = () => {
       return;
     }
 
+    // Fetch environment variables from Cloudflare
+    const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+    const templateID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+    const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+
+    // Define template parameters for EmailJS
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      message: message,
+    };
+
+    emailjs.send(serviceID, templateID, templateParams, publicKey)
+    .then(() => {
+      setSuccess("Your message has been sent successfully!");
+      setName("");
+      setEmail("");
+      setMessage("");
+    })
+    .catch(() => {
+      setError("Failed to send the message. Please try again later.");
+    })
+    .finally(() => {
+      setLoading(false);
+    });
+
     // Mock success message for local testing (no actual email sent)
     setTimeout(() => {
       setSuccess("Your message has been sent successfully!");
@@ -39,7 +66,7 @@ const ContactForm = () => {
       setEmail("");
       setMessage("");
       setLoading(false);
-  }, 2000);
+    }, 2000);
   };
 
   return (
