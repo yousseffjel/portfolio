@@ -26,7 +26,7 @@ const Contact = () => {
         </h2>
 
         {/* Create a flex or grid container */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20">
           
           {/* Left side: Contact Form */}
           <div className="p-6 rounded-lg">
@@ -70,7 +70,7 @@ const Contact = () => {
                 label="GitHub"
                 color="gray-700"
               />
-              
+
             </div>
           </div>
         </div>
