@@ -64,15 +64,13 @@ const Contact = () => {
                 color="blue-500"
               />
 
-              <a
-                href="https://github.com/yousseffjel" // Replace with your GitHub URL
-                className="flex items-center justify-center text-lg text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition duration-300 transform hover:scale-105"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaGithub className="text-3xl mr-4" />
-                <span>GitHub</span>
-              </a>
+              <ContactLink
+                href="https://github.com/yousseffjel"
+                icon={<FaGithub />}
+                label="GitHub"
+                color="gray-700"
+              />
+              
             </div>
           </div>
         </div>
