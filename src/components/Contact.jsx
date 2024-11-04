@@ -24,22 +24,20 @@ const Contact = () => {
         <h2 className="text-4xl font-bold text-center mb-6 ">
           Contact Me
         </h2>
-
+            {/* Professional Text */}
+            <p className="text-lg text-gray-700 dark:text-gray-300 italic mb-4 text-center">
+              I'm always open to discussing exciting projects and new opportunities!
+            </p>
         {/* Create a flex or grid container */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20">
           
           {/* Left side: Contact Form */}
-          <div className="p-6 rounded-lg">
+          <div className="p-6 rounded-lg ">
             <ContactForm />
           </div>
           
           {/* Right side: Contact Text and Links */}
           <div className="flex flex-col justify-center items-center md:items-start space-y-6">
-            
-            {/* Professional Text */}
-            <p className="text-lg text-gray-700 dark:text-gray-300 italic mb-4 text-center md:text-left">
-              I'm always open to discussing new projects and opportunities!
-            </p>
 
             {/* Contact Links */}
             <div className="grid grid-cols-2 gap-6 md:grid-cols-1">
