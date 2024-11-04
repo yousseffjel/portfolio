@@ -43,14 +43,12 @@ const Contact = () => {
 
             {/* Contact Links */}
             <div className="grid grid-cols-2 gap-6 md:grid-cols-1">
-              <a
+            <ContactLink
                 href="mailto:contact@yousseffjel.com"
-                className="flex items-center justify-center text-lg text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition duration-300 transform hover:scale-105"
-              >
-                <FaEnvelope className="text-3xl mr-4" />
-                <span>Email</span>
-              </a>
-
+                icon={<FaEnvelope />}
+                label="Email"
+                color="blue-500"
+              />
               <a
                 href="https://www.linkedin.com/in/youssef-fjel/"
                 className="flex items-center justify-center text-lg text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition duration-300 transform hover:scale-105"
