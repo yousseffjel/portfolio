@@ -9,7 +9,9 @@ const Contact = () => {
       className="py-16 px-6 sm:px-8 bg-gray-200 dark:bg-gray-900 text-gray-900 dark:text-gray-100"
     >
       <div className="container mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-6">Contact Me</h2>
+        <h2 className="text-4xl font-bold text-center mb-6 ">
+          Contact Me
+        </h2>
 
         {/* Create a flex or grid container */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
