@@ -1,6 +1,18 @@
 import React from "react";
-import { FaLinkedin, FaEnvelope, FaTelegramPlane, FaGithub } from 'react-icons/fa'; // Import FontAwesome Icons
-import ContactForm from "./ContactForm"; // Import the ContactForm component
+import { FaLinkedin, FaEnvelope, FaTelegramPlane, FaGithub } from 'react-icons/fa';
+import ContactForm from "./ContactForm";
+
+const ContactLink = ({ href, icon, label, color }) => (
+  <a
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer"
+    className={`flex items-center justify-center text-lg text-gray-700 dark:text-gray-300 hover:text-${color} dark:hover:text-${color} transition duration-300 transform hover:scale-105`}
+  >
+    <span className="text-3xl mr-4">{icon}</span>
+    <span>{label}</span>
+  </a>
+);
 
 const Contact = () => {
   return (
