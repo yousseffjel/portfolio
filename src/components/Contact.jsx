@@ -2,12 +2,14 @@ import React from "react";
 import { FaLinkedin, FaEnvelope, FaTelegramPlane, FaGithub } from 'react-icons/fa';
 import ContactForm from "./ContactForm";
 
-const ContactLink = ({ href, icon, label, color }) => (
+const ContactLink = ({ href, icon, label, colorClass }) => (
   <a
     href={href}
     target="_blank"
     rel="noopener noreferrer"
-    className={`flex items-center justify-center p-3 rounded-lg text-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-${color} dark:hover:text-${color} transition duration-300 transform hover:scale-105`}
+    aria-label={label}
+    className={`flex items-center justify-center p-3 rounded-lg text-lg text-gray-700 dark:text-gray-300
+              hover:bg-gray-100 dark:hover:bg-gray-800 ${colorClass} transition duration-300 transform hover:scale-105`}
   >
     <span className="text-3xl mr-4">{icon}</span>
     <span>{label}</span>
