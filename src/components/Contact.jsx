@@ -49,16 +49,14 @@ const Contact = () => {
                 label="Email"
                 color="blue-500"
               />
-              <a
-                href="https://www.linkedin.com/in/youssef-fjel/"
-                className="flex items-center justify-center text-lg text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition duration-300 transform hover:scale-105"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedin className="text-3xl mr-4" />
-                <span>LinkedIn</span>
-              </a>
 
+              <ContactLink
+                href="https://www.linkedin.com/in/youssef-fjel/"
+                icon={<FaLinkedin />}
+                label="LinkedIn"
+                color="blue-600"
+              />
+              
               <a
                 href="https://t.me/yousseffjel"
                 className="flex items-center justify-center text-lg text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition duration-300 transform hover:scale-105"
