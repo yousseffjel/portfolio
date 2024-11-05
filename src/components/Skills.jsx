@@ -84,6 +84,9 @@ const Skills = () => {
                   className="relative p-4 bg-white dark:bg-gray-800 shadow-md rounded-lg hover:shadow-lg transition-shadow duration-300"
                   onMouseEnter={() => setHoveredSkill(skill.name)}
                   onMouseLeave={() => setHoveredSkill(null)}
+                  onFocus={() => setHoveredSkill(skill.name)}
+                  onBlur={() => setHoveredSkill(null)}
+                  tabIndex="0"
                 >
                   <img
                     src={skill.icon}
