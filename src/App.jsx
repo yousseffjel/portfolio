@@ -43,7 +43,9 @@ function App() {
           
           {/* Other Sections */}
           <About />
-          <Skills />
+          <Suspense fallback={<div>Loading skills...</div>}>
+            <Skills />
+          </Suspense>
           <Projects />
           <Experience />
           <Certifications />
