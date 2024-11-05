@@ -93,12 +93,9 @@ const Skills = () => {
                   onBlur={() => setHoveredSkill(null)}
                   tabIndex="0"
                 >
-                  <img
-                    src={skill.icon}
-                    alt={`${skill.name} icon`}
-                    className="w-12 h-12 mx-auto mb-4"
-                    aria-label={skill.name}
-                  />
+                  <div className="w-12 h-12 mx-auto mb-4" aria-label={skill.name}>
+                    {skill.icon}
+                  </div>
                   <h4 className="text-lg font-semibold text-center">{skill.name}</h4>
                   <div className="relative pt-1">
                     <div className="overflow-hidden h-2 mb-4 text-xs flex rounded bg-gray-200 dark:bg-gray-700">
