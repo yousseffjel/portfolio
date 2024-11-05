@@ -92,6 +92,7 @@ const Skills = () => {
                     src={skill.icon}
                     alt={`${skill.name} icon`}
                     className="w-12 h-12 mx-auto mb-4"
+                    aria-label={skill.name}
                   />
                   <h4 className="text-lg font-semibold text-center">{skill.name}</h4>
                   <div className="relative pt-1">
