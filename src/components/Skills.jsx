@@ -106,7 +106,7 @@ const Skills = () => {
 
                   {/* Tooltip */}
                   {hoveredSkill === skill.name && (
-                    <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full bg-black text-white text-xs rounded px-2 py-1">
+                    <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full bg-black text-white text-xs rounded px-2 py-1 opacity-90 transition-opacity duration-300">
                       {skill.description}
                     </div>
                   )}
