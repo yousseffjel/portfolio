@@ -1,41 +1,46 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 // Importing icons
-import htmlIcon from '../assets/icons/html-icon.svg';
-import cssIcon from '../assets/icons/css-icon.svg';
-import javascriptIcon from '../assets/icons/javascript-icon.svg';
-import reactIcon from '../assets/icons/react-icon.svg';
-import nodejsIcon from '../assets/icons/nodejs-icon.svg';
-import dockerIcon from '../assets/icons/docker-icon.svg';
-import linuxIcon from '../assets/icons/linux-icon.svg';
-import figmaIcon from '../assets/icons/figma-icon.svg';
-import photoshopIcon from '../assets/icons/photoshop-icon.svg';
-import tailwindIcon from '../assets/icons/tailwind-icon.svg';
+import { CodeIcon, SparklesIcon, TerminalIcon, LightningBoltIcon, AdjustmentsIcon } from '@heroicons/react/solid';
+import { ServerIcon, CubeIcon, DatabaseIcon } from '@heroicons/react/solid';
+import { PencilAltIcon, ColorSwatchIcon } from '@heroicons/react/solid';
 
 const skillsData = [
   {
-    category: "Frontend Development",
+    category: "Front-End Development",
     skills: [
-      { name: "HTML", icon: htmlIcon, percentage: 90, description: "Markup language for web pages" },
-      { name: "CSS", icon: cssIcon, percentage: 85, description: "Style sheet language for designing" },
-      { name: "JavaScript", icon: javascriptIcon, percentage: 90, description: "Programming language for web development" },
-      { name: "ReactJS", icon: reactIcon, percentage: 85, description: "JavaScript library for building UIs" },
-      { name: "Tailwind", icon: tailwindIcon, percentage: 90, description: "Utility-first CSS framework" },
+      { name: "HTML", icon: <CodeIcon className="w-12 h-12 text-red-500" />, percentage: 95, description: "Markup language for structuring web content" },
+      { name: "CSS", icon: <SparklesIcon className="w-12 h-12 text-blue-500" />, percentage: 90, description: "Styles web pages with various layouts and animations" },
+      { name: "JavaScript", icon: <TerminalIcon className="w-12 h-12 text-yellow-500" />, percentage: 90, description: "Enables interactive behavior on web pages" },
+      { name: "ReactJS", icon: <LightningBoltIcon className="w-12 h-12 text-blue-400" />, percentage: 85, description: "JavaScript library for building user interfaces" },
+      { name: "Tailwind", icon: <AdjustmentsIcon className="w-12 h-12 text-teal-400" />, percentage: 90, description: "Utility-first CSS framework for styling" },
     ],
   },
   {
-    category: "Backend & DevOps",
+    category: "WordPress",
     skills: [
-      { name: "NodeJS", icon: nodejsIcon, percentage: 80, description: "JavaScript runtime for server-side programming" },
-      { name: "Docker", icon: dockerIcon, percentage: 75, description: "Platform for containerized applications" },
-      { name: "Linux", icon: linuxIcon, percentage: 85, description: "Open-source operating system" },
+      //{ name: "WordPress CMS", icon: wordpressIcon, percentage: 80, description: "Platform for content management and websites" },
+      //{ name: "Elementor", icon: elementorIcon, percentage: 75, description: "Page builder plugin for WordPress" },
+      //{ name: "WooCommerce", icon: woocommerceIcon, percentage: 70, description: "E-commerce plugin for WordPress" },
     ],
   },
   {
-    category: "Design",
+    category: "Linux & DevOps",
     skills: [
-      { name: "Figma", icon: figmaIcon, percentage: 80, description: "Collaborative interface design tool" },
-      { name: "Photoshop", icon: photoshopIcon, percentage: 75, description: "Image editing and design software" },
+      { name: "NodeJS", icon: <DatabaseIcon className="w-12 h-12 text-green-500" />, percentage: 80, description: "JavaScript runtime for server-side programming" },
+      { name: "Linux", icon: <ServerIcon className="w-12 h-12 text-gray-500" />, percentage: 85, description: "Open-source operating system for development and deployment" },
+      { name: "Docker", icon: <CubeIcon className="w-12 h-12 text-blue-500" />, percentage: 80, description: "Container platform for DevOps workflows" },
+      //{ name: "CI/CD", icon: cicdIcon, percentage: 75, description: "Continuous integration and delivery pipelines" },
+      //{ name: "Nginx", icon: nginxIcon, percentage: 70, description: "Web server for hosting applications" },
+    ],
+  },
+  {
+    category: "Design (UX & UI)",
+    skills: [
+      { name: "Figma", icon: <PencilAltIcon className="w-12 h-12 text-purple-500" />, percentage: 85, description: "Collaborative design and prototyping tool" },
+      { name: "Adobe Photoshop", icon: <ColorSwatchIcon className="w-12 h-12 text-indigo-500" />, percentage: 75, description: "Graphic design and image editing software" },
+      //{ name: "User Research", icon: researchIcon, percentage: 70, description: "Conducting research to understand user needs" },
+      //{ name: "Prototyping", icon: prototypingIcon, percentage: 80, description: "Building and testing UI prototypes" },
     ],
   },
 ];
