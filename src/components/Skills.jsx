@@ -1,46 +1,43 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 // Importing icons
-import { CodeIcon, SparklesIcon, TerminalIcon, LightningBoltIcon, AdjustmentsIcon } from '@heroicons/react/solid';
-import { ServerIcon, CubeIcon, DatabaseIcon } from '@heroicons/react/solid';
-import { PencilAltIcon, ColorSwatchIcon } from '@heroicons/react/solid';
+import { FaHtml5, FaCss3Alt, FaReact, FaWordpress, FaNodeJs, FaLinux, FaDocker, FaGitAlt, FaFigma } from 'react-icons/fa';
+import { SiJavascript, SiTailwindcss, SiElementor, SiWoo, SiNginx, SiAdobephotoshop } from 'react-icons/si';
 
 const skillsData = [
   {
     category: "Front-End Development",
     skills: [
-      { name: "HTML", icon: <CodeIcon className="w-12 h-12 text-red-500" />, percentage: 95, description: "Markup language for structuring web content" },
-      { name: "CSS", icon: <SparklesIcon className="w-12 h-12 text-blue-500" />, percentage: 90, description: "Styles web pages with various layouts and animations" },
-      { name: "JavaScript", icon: <TerminalIcon className="w-12 h-12 text-yellow-500" />, percentage: 90, description: "Enables interactive behavior on web pages" },
-      { name: "ReactJS", icon: <LightningBoltIcon className="w-12 h-12 text-blue-400" />, percentage: 85, description: "JavaScript library for building user interfaces" },
-      { name: "Tailwind", icon: <AdjustmentsIcon className="w-12 h-12 text-teal-400" />, percentage: 90, description: "Utility-first CSS framework for styling" },
+      { name: "HTML", icon: <FaHtml5 className="w-12 h-12 text-orange-500" />, percentage: 95, description: "Markup language for structuring web content" },
+      { name: "CSS", icon: <FaCss3Alt className="w-12 h-12 text-blue-500" />, percentage: 90, description: "Styles web pages with various layouts and animations" },
+      { name: "JavaScript", icon: <SiJavascript className="w-12 h-12 text-yellow-500" />, percentage: 90, description: "Enables interactive behavior on web pages" },
+      { name: "ReactJS", icon: <FaReact className="w-12 h-12 text-blue-400" />, percentage: 85, description: "JavaScript library for building user interfaces" },
+      { name: "Tailwind", icon: <SiTailwindcss className="w-12 h-12 text-teal-400" />, percentage: 90, description: "Utility-first CSS framework for styling" },
     ],
   },
   {
     category: "WordPress",
     skills: [
-      //{ name: "WordPress CMS", icon: wordpressIcon, percentage: 80, description: "Platform for content management and websites" },
-      //{ name: "Elementor", icon: elementorIcon, percentage: 75, description: "Page builder plugin for WordPress" },
-      //{ name: "WooCommerce", icon: woocommerceIcon, percentage: 70, description: "E-commerce plugin for WordPress" },
+      { name: "WordPress CMS", icon: <FaWordpress className="w-12 h-12 text-blue-600" />, percentage: 80, description: "Platform for content management and websites" },
+      { name: "Elementor", icon: <SiElementor className="w-12 h-12 text-purple-500" />, percentage: 75, description: "Page builder plugin for WordPress" },
+      { name: "WooCommerce", icon: <SiWoo className="w-12 h-12 text-green-600" />, percentage: 70, description: "E-commerce plugin for WordPress" },
     ],
   },
   {
     category: "Linux & DevOps",
     skills: [
-      { name: "NodeJS", icon: <DatabaseIcon className="w-12 h-12 text-green-500" />, percentage: 80, description: "JavaScript runtime for server-side programming" },
-      { name: "Linux", icon: <ServerIcon className="w-12 h-12 text-gray-500" />, percentage: 85, description: "Open-source operating system for development and deployment" },
-      { name: "Docker", icon: <CubeIcon className="w-12 h-12 text-blue-500" />, percentage: 80, description: "Container platform for DevOps workflows" },
-      //{ name: "CI/CD", icon: cicdIcon, percentage: 75, description: "Continuous integration and delivery pipelines" },
-      //{ name: "Nginx", icon: nginxIcon, percentage: 70, description: "Web server for hosting applications" },
+      { name: "NodeJS", icon: <FaNodeJs className="w-12 h-12 text-green-500" />, percentage: 80, description: "JavaScript runtime for server-side programming" },
+      { name: "Linux", icon: <FaLinux className="w-12 h-12 text-gray-500" />, percentage: 85, description: "Open-source operating system for development and deployment" },
+      { name: "Docker", icon: <FaDocker className="w-12 h-12 text-blue-500" />, percentage: 80, description: "Container platform for DevOps workflows" },
+      { name: "CI/CD", icon: <FaGitAlt className="w-12 h-12 text-orange-500" />, percentage: 75, description: "Continuous integration and delivery pipelines" },
+      { name: "Nginx", icon: <SiNginx className="w-12 h-12 text-green-700" />, percentage: 70, description: "Web server for hosting applications" },
     ],
   },
   {
     category: "Design (UX & UI)",
     skills: [
-      { name: "Figma", icon: <PencilAltIcon className="w-12 h-12 text-purple-500" />, percentage: 85, description: "Collaborative design and prototyping tool" },
-      { name: "Adobe Photoshop", icon: <ColorSwatchIcon className="w-12 h-12 text-indigo-500" />, percentage: 75, description: "Graphic design and image editing software" },
-      //{ name: "User Research", icon: researchIcon, percentage: 70, description: "Conducting research to understand user needs" },
-      //{ name: "Prototyping", icon: prototypingIcon, percentage: 80, description: "Building and testing UI prototypes" },
+      { name: "Figma", icon: <FaFigma className="w-12 h-12 text-purple-500" />, percentage: 85, description: "Collaborative design and prototyping tool" },
+      { name: "Adobe Photoshop", icon: <SiAdobephotoshop className="w-12 h-12 text-blue-600" />, percentage: 75, description: "Graphic design and image editing software" },
     ],
   },
 ];
